@@ -20,7 +20,7 @@ The framework operates on a decoupled 4-tier pipeline:
 1. **Tier 1 - Data Ingestion:** `live_mitm_logger.py` captures and logs network metadata and raw prompts into `wrse_comprehensive_audit.log`.
 2. **Tier 2 - NLP Inspection Layer:** `data_core.py` executes `forensic_normalize()` and indexes prompts against the Corporate Asset Vault to identify data leaks.
 3. **Tier 3 - WRSE Scoring Module:** Calculates the mathematical risk score and assigns severity classifications (`CRITICAL`, `MEDIUM`, `LOW`).
-4. **Tier 4 - Governance Visualization:** `app.py` serves the real-time SIEM dashboard for SOC administrators.
+4. **Tier 4 - Governance Visualization:** `app.py` serves the real-time dashboard for administrators.
 
 ---
 
