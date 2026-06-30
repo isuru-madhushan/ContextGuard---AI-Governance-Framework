@@ -48,7 +48,7 @@ To execute the complete prototype, you must run the interception logger and the 
 ### Terminal 1: Start the Interception Plane
 This service listens for outbound AI traffic and writes captured prompts to the central log file.
 ```bash
-cd Section3_Dashboard/Section1_DataIngestion
+cd /ShadowAI_Framework/Section1_DataIngestion
 ```
 
 ```bash
@@ -59,7 +59,7 @@ mitmdump -p 8080 --set listen_host=0.0.0.0 -s live_mitm_logger.py
 Navigate to the dashboard directory and launch the Streamlit server.
 
 ```bash
-cd Section3_Dashboard/Section3_Dashboard
+cd /ShadowAI_Framework/Section3_Dashboard
 ```
 
 ```bash
