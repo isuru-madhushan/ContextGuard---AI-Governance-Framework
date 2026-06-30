@@ -1,8 +1,8 @@
 # 🛡️ ContextGuard: Shadow AI Governance Framework
 
-**ContextGuard** is an automated risk assessment and governance framework designed to detect, analyze, and mitigate insider threats arising from the unauthorized use of Large Language Models (LLMs) in corporate environments (Shadow AI).
+**ContextGuard** is an automated risk assessment and governance framework designed to detect, analyze and mitigate insider threats arising from the unauthorized use of Large Language Models (LLMs) in corporate environments (Shadow AI).
 
-By establishing a non-intrusive, context-aware inspection plane, the framework intercepts outbound AI API traffic, decodes complex payload structures, and evaluates data sensitivity using Natural Language Processing (NLP). It calculates a dynamic **Weighted Risk Scoring Engine (WRSE)** score and routes real-time alerts to a Zero-Trust Security Operations Center (SOC) dashboard.
+By establishing a non-intrusive, context-aware inspection plane, the framework intercepts outbound AI API traffic, decodes complex payload structures and evaluates data sensitivity using Natural Language Processing (NLP). It calculates a dynamic **Weighted Risk Scoring Engine (WRSE)** score and routes real-time alerts to a Zero-Trust Security Operations dashboard.
 
 ---
 
