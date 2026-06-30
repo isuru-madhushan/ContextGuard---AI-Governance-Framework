@@ -1,0 +1,28 @@
+{
+  "assets": [
+    {
+      "keyword": "patient records",
+      "weight": 0.95,
+      "tier": "Medical Records (PHI)",
+      "description": "Direct mention of patient records",
+      "added_by": "System Default",
+      "added_on": "2026-06-28"
+    },
+    {
+      "keyword": "hl7 protocol",
+      "weight": 0.85,
+      "tier": "Medical Records (PHI)",
+      "description": "HL7 healthcare data exchange protocol",
+      "added_by": "System Default",
+      "added_on": "2026-06-28"
+    },
+    {
+      "keyword": "prescription data",
+      "weight": 0.90,
+      "tier": "Medical Records (PHI)",
+      "description": "Patient prescription information",
+      "added_by": "System Default",
+      "added_on": "2026-06-28"
+    }
+  ]
+}
