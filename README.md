@@ -29,8 +29,7 @@ Ensure you have **Python 3.10+** installed.
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repository-url>
-   cd ShadowAI_Framework
+   git clone https://github.com/isuru-madhushan/ContextGuard-AI-Governance-Framework.git
    ```
 
 2. **Install the dependencies:**
@@ -49,14 +48,22 @@ To execute the complete prototype, you must run the interception logger and the 
 ### Terminal 1: Start the Interception Plane
 This service listens for outbound AI traffic and writes captured prompts to the central log file.
 ```bash
-mitmdump -s Section1_DataIngestion/live_mitm_logger.py
+cd Section3_Dashboard/Section1_DataIngestion
+```
+
+```bash
+mitmdump -p 8080 --set listen_host=0.0.0.0 -s live_mitm_logger.py
 ```
 
 ### Terminal 2: Start the Zero-Trust Dashboard
 Navigate to the dashboard directory and launch the Streamlit server.
+
 ```bash
-cd Section3_Dashboard
-streamlit run app.py
+cd Section3_Dashboard/Section3_Dashboard
+```
+
+```bash
+streamlit run app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
 ```
 
 **Accessing the Portal:**
